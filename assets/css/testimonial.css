@@ -1,0 +1,92 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F4F4F4;
+    color: #333;
+}
+
+.container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+}
+
+
+.banner-container {
+    overflow-x: auto;
+    /* Permite rolagem horizontal */
+    display: flex;
+    gap: 20px;
+    scroll-snap-type: x mandatory;
+    padding: 20px 0;
+}
+
+.banner-wrapper {
+    display: flex;
+    gap: 20px;
+    scroll-snap-align: start;
+    width: 100%;
+    /* Certifique-se que ocupa todo o espaço disponível */
+}
+
+.banner-slide {
+    flex: 0 0 80%;
+    /* Define o tamanho de cada slide */
+    max-width: 800px;
+    background: #FFF;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    scroll-snap-align: center;
+    transition: transform 0.3s;
+}
+
+.banner-slide:hover {
+    transform: scale(1.05);
+}
+
+.testimonial h2 {
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 600;
+    color: #2196f3;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.testimonial-logo {
+    width: 200px;
+    /* Largura fixa */
+    height: 200px;
+    /* Altura fixa */
+    margin-bottom: 15px;
+    border-radius: 10%;
+    /* Opcional: bordas arredondadas */
+    object-fit: contain;
+    /* Garante que a imagem mantenha a proporção dentro do contêiner */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-text p {
+    font-size: 1rem;
+    margin: 10px 0;
+    color: #555;
+}
+
+.author {
+    font-weight: bold;
+    color: #FF0000;
+    /* Vermelho Intenso */
+}
+
+.company {
+    color: #50C878;
+    /* Verde Esmeralda */
+    font-style: italic;
+}

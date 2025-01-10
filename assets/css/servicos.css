@@ -1,0 +1,109 @@
+/* Estilo Geral */
+#servicos {
+    background: linear-gradient(135deg, #ffffff 0%, #f3f4f6 100%);
+    padding: 5rem 1rem;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Título */
+#servicos h2 {
+    font-size: clamp(2.5rem, 5vw, 3.5rem);
+    color: #2196f3;
+    margin-bottom: 2rem;
+    position: relative;
+    z-index: 2;
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+/* Lista de Serviços */
+.services-list {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    z-index: 2;
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+/* Item do Serviço */
+.service {
+    background: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 2rem;
+    width: 280px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+/* Ícone do Serviço */
+.service .icon {
+    background-color: #2196f3;
+    padding: 1rem;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    transition: background-color 0.3s ease;
+}
+
+/* Título e Texto do Serviço */
+.service h3 {
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: #2196f3;
+    margin-bottom: 1rem;
+}
+
+.service p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    max-width: 250px;
+    margin: 0 auto;
+}
+
+/* Hover Effects */
+.service:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.service:hover .icon {
+    background-color: #00796b;
+}
+
+/* Animação de Entrada */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    #servicos {
+        padding: 3rem 1rem;
+    }
+
+    .services-list {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .service {
+        width: 100%;
+        max-width: 350px;
+    }
+}

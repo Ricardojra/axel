@@ -1,0 +1,145 @@
+/* Banner Principal - Imagem e Vídeo de Fundo */
+.banner {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    /* Altura do banner igual à altura da tela */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    padding: 0 20px;
+    /* Adiciona espaço interno lateral para dispositivos menores */
+    box-sizing: border-box;
+    /* Inclui padding no cálculo de largura */
+}
+
+.banner video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Ajusta o vídeo para cobrir o fundo */
+    z-index: -1;
+    /* Mantém o vídeo atrás do conteúdo */
+}
+
+.banner .container {
+    position: relative;
+    z-index: 1;
+    /* Garante que o conteúdo fique acima do vídeo */
+}
+
+/* Texto no Banner */
+.banner h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    line-height: 1.2;
+    /* Melhora o espaçamento entre linhas */
+}
+
+.banner p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    line-height: 1.5;
+    /* Melhora a legibilidade */
+}
+
+/* Estilo para os botões CTA */
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    /* Permite que os botões se empilhem em telas menores */
+    margin-top: 30px;
+}
+
+.cta-button {
+    background-color: #004d40;
+    /* Cor de fundo */
+    color: #fff;
+    /* Cor do texto */
+    padding: 12px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    min-width: 120px;
+    /* Garante que os botões tenham tamanho mínimo */
+}
+
+.cta-button:hover {
+    background-color: #00796b;
+    /* Cor de fundo ao passar o mouse */
+}
+
+/* Estilos Responsivos */
+@media (max-width: 1024px) {
+    .banner h1 {
+        font-size: 3rem;
+        /* Reduz o tamanho do título */
+    }
+
+    .banner p {
+        font-size: 1.2rem;
+        /* Reduz o tamanho do parágrafo */
+    }
+
+    .cta-buttons {
+        gap: 10px;
+        /* Reduz o espaço entre os botões */
+    }
+
+    .cta-button {
+        padding: 10px 15px;
+        /* Reduz o padding dos botões */
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .banner h1 {
+        font-size: 2.5rem;
+        /* Reduz o tamanho do título para tablets */
+    }
+
+    .banner p {
+        font-size: 1rem;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+        /* Empilha os botões verticalmente */
+        gap: 10px;
+    }
+
+    .cta-button {
+        width: 100%;
+        /* Botões ocupam toda a largura */
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner {
+        padding: 20px;
+        /* Adiciona espaço interno em dispositivos muito pequenos */
+    }
+
+    .banner h1 {
+        font-size: 2rem;
+        /* Ajusta o título para telas muito pequenas */
+    }
+
+    .banner p {
+        font-size: 0.9rem;
+    }
+}

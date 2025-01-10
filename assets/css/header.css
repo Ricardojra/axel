@@ -1,0 +1,158 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    /* Cor de fundo leve */
+}
+
+/* Estilos do cabeçalho */
+header {
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    padding: 0px 20px;
+    background-color: #1E3A8A;
+    z-index: 1000;    /* Fica acima de outros elementos */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);   /* Sombra para destaque */
+    /* Azul Escuro */
+    color: #fff;
+    position: fixed;    /* Fixar o cabeçalho no topo */
+    width: 100%;        /* Garante que o cabeçalho ocupe toda a largura */
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* Logo */
+.logo a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    /* Outros estilos de texto */
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: 600; /* Peso mais forte */
+    
+}
+
+.logo img {
+    width: 160px;
+    height: auto;
+    margin-right: 10px;
+}
+
+/* Ícones de mídias sociais */
+.social-icons {
+    position: absolute;
+    right: 60px;
+    top: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+/* Ajustando o estilo dos ícones de mídias sociais */
+.social-icons a {
+    font-size: 22px;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+}
+    
+/* Hover nos ícones */
+.social-icons a:hover {
+    color: #63B3ED; /* Azul Claro */
+}
+
+/* Menu de navegação */
+.navigation ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.navigation li {
+    margin-left: 30px;
+}
+
+/* Menu de navegação */
+.navigation a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    /* Peso da fonte */
+    padding: 10px 15px;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+/* Efeito de hover para os itens do menu */
+.navigation a:hover {
+    color: #63B3ED;
+        /* Altera a cor do texto ao passar o mouse */
+    /* Azul Médio */
+    border-radius: 5px;
+}
+
+/* Menu Hambúrguer */
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    position: absolute;
+    right: 60px;
+    bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+.hamburger-menu .bar {
+    width: 30px;
+    height: 3px;
+    margin: 3px 0;
+    background-color: #fff;
+    transition: all 0.3s ease;
+}
+
+/* Estilos responsivos para o menu suspenso */
+@media (max-width: 1200px) {
+    .navigation {
+        display: none;
+        width: 100%;
+        position: absolute;
+        top: 100px;
+        left: 0;
+        background-color: #1E3A8A;
+        /* Azul Escuro */
+        text-align: center;
+    }
+
+    .navigation ul {
+        flex-direction: column;
+        padding: 0;
+        justify-content: flex-start;
+        width: 100%;
+    }
+
+    .navigation li {
+        margin: 5px 0;
+    }
+
+    .hamburger-menu {
+        display: flex;
+    }
+
+    .navigation.active {
+        display: flex;
+    }
+}

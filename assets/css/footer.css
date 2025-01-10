@@ -1,0 +1,119 @@
+.footer {
+    background: linear-gradient(135deg, #333, #1E3A8A);
+    /* Gradiente escuro */
+    color: #FFF;
+    padding: 40px 20px;
+    font-size: 0.9rem;
+}
+
+.footer h3 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: #FF5722;
+    /* Laranja vibrante */
+}
+
+.footer p {
+    line-height: 1.6;
+}
+
+.footer a {
+    color: #50C878;
+    /* Verde Esmeralda */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer a:hover {
+    color: #FFF;
+    /* Destaque branco ao passar o mouse */
+}
+
+.footer-columns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-menu {
+    list-style-type: none;
+    /* Remove os marcadores da lista */
+    padding: 0;
+    /* Remove o preenchimento padrão */
+    margin: 0;
+    /* Remove a margem padrão */
+    display: flex;
+    flex-direction: column;
+    /* Alinha os itens verticalmente */
+    width: 280px;
+    /* Define uma largura para a lista */
+}
+
+.footer-menu a {
+    padding: 10px;
+    /* Adiciona espaço interno ao link */
+    text-decoration: none;
+    /* Remove o sublinhado */
+    color: #fff;
+    /* Define a cor do texto */
+    margin-bottom: 5px;
+    /* Espaçamento entre os links */
+    transition: background-color 0.3s;
+    /* Suaviza a transição do efeito hover */
+}
+
+/* Hover nos footer menu */
+.footer-menu a:hover {
+    color: #63B3ED;
+    /* Altera a cor do texto ao passar o mouse */
+}
+
+/* Ícones de mídias sociais */
+.social-footer {
+    display: flex;
+    /* Organiza os ícones em linha */
+    justify-content: center;
+    /* Centraliza os ícones horizontalmente */
+    align-items: center;
+    /* Centraliza os ícones verticalmente */
+    gap: 30px;
+    /* Espaçamento entre os ícones */
+    position: relative;
+    /* Define a posição em relação ao contêiner pai */
+    width: 100%;
+    /* Garante que o contêiner ocupe a largura total */
+    height: 100px;
+    /* Define uma altura para o contêiner */
+    margin: 0 auto;
+    /* Centraliza o contêiner no eixo horizontal */
+}
+
+/* Ajustando o estilo dos ícones de mídias sociais */
+.social-footer a {
+    font-size: 22px;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Hover nos ícones */
+.social-footer a:hover {
+    color: #63B3ED;
+    /* Azul Claro */
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding-top: 10px;
+    font-size: 0.8rem;
+    color: #CCC;
+}

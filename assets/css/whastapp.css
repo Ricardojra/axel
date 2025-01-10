@@ -1,0 +1,71 @@
+/* Estilo do botão flutuante do WhatsApp */
+.whatsapp-button {
+    position: fixed;
+    /* Fixa o botão na tela */
+    bottom: 20px;
+    /* Distância do fundo da tela */
+    right: 20px;
+    /* Distância da direita da tela */
+    
+    /* Cor de fundo do WhatsApp */
+    border-radius: 50%;
+    /* Torna o botão redondo */
+    padding: 15px;
+    /* Tamanho do botão */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Sombra para destaque */
+    z-index: 1000;
+    /* Garante que o botão fique acima de outros elementos */
+    transition: all 0.3s ease;
+    /* Animação suave no hover */
+}
+
+.whatsapp-button img {
+    width: 50px;
+    /* Tamanho do ícone */
+    height: auto;
+    /* Ajusta a altura automaticamente */
+    display: block;
+}
+
+/* Efeito de hover para o botão */
+.whatsapp-button:hover {
+    background-color: #128C7E;
+    /* Cor de fundo ao passar o mouse */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    /* Aumenta a sombra no hover */
+}
+
+/* Responsividade para telas pequenas */
+@media (max-width: 768px) {
+    .whatsapp-button {
+        bottom: 15px;
+        /* Ajusta a distância do fundo */
+        right: 15px;
+        /* Ajusta a distância da direita */
+        padding: 12px;
+        /* Diminui o tamanho do botão */
+    }
+
+    .whatsapp-button img {
+        width: 40px;
+        /* Reduz o tamanho do ícone */
+    }
+}
+
+/* Responsividade para telas muito pequenas */
+@media (max-width: 480px) {
+    .whatsapp-button {
+        bottom: 10px;
+        /* Ajusta ainda mais a distância do fundo */
+        right: 10px;
+        /* Ajusta a distância da direita */
+        padding: 10px;
+        /* Diminui o tamanho do botão */
+    }
+
+    .whatsapp-button img {
+        width: 35px;
+        /* Ajusta o tamanho do ícone */
+    }
+}
