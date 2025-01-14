@@ -50,7 +50,7 @@ header {
 /* Ícones de mídias sociais */
 .social-icons {
     position: absolute;
-    right: 70px;
+    right: 60px;
     top: 10px;
     display: flex;
     gap: 10px;
